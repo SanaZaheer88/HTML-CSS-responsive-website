@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px){
+.equal-cols{
+    flex-direction: row;
+    gap: 4rem;
+}
+.hero__image{
+    max-width: 32rem;
+    order: 2;
+}
+
+.hero__text{
+    order: 1;
+}
+
+.hero__text{
+    text-align: left;
+}
+.section-padding {
+    padding: 6rem 2rem;
+}
+
+.about__text{
+    text-align: left;
+}
+
+.features__text{
+    text-align: left;
+    order: 1;
+}
+
+.feature_text_list_item{
+    flex-direction: row;
+     align-items: left;
+}
+
+.features__image{
+    order: 2;
+}
+
+.service__container {
+    gap: 2rem;
+}
+
+.faq__text{
+    text-align: left;
+}
+
+.ac .ac-trigger, .ac .ac-panel .ac-text{
+    text-align: left;
+}
+.contact {
+    gap: 0; 
+ padding-bottom: 0;
+ padding-top: 0;
+}
+
+.footer {
+    flex-direction: row;
+}
+.features__container {
+    padding-top: 0;
+}
+.faq_header_container {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.top_nav_mobile_menu_button{
+    display: none;
+}
+
+.top-nav__links {
+    display: inline-block;
+}
+}

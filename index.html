@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+    <link rel="stylesheet" href="styles-sm.css">
+    <link rel="stylesheet" href="styles-md.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="top-bar">
+        <nav class="top-nav container">
+            <img class="top-nav__logo" src="images/logo (2).png" alt="logo-image">
+            <ul id="menu-lg" class="top-nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="top_nav_mobile_menu_button" data-pushbar-target="mobile-menu"><i
+                    class="bi bi-list"></i></button>
+        </nav>
+    </header>
+
+    <aside class="mobile-menu" data-pushbar-id="mobile-menu" data-pushbar-direction="left">
+        <ul id="menu-sm" class="mobile-menu__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="mobile-menu-close" data-pushbar-close><i class="bi bi-x-lg"></i></button>
+    </aside>
+
+    <!-- Hero Start -->
+    <section id="home" class="hero scrollspy">
+        <section class="hero__container container equal-cols section-padding">
+            <div class="hero__image">
+                <img src="images/hero-image.png" alt="hero image">
+            </div>
+            <div class="hero__text">
+                <h1 class="hero__text__heading"> A digital agency for <strong>You</strong></h1>
+                <p class="hero__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, earum
+                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sapiente.</p>
+                <a class="hero__text__button primary-button button-margin" href="#">Learn More</a>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- About Start -->
+    <section id="about" class="about scrollspy">
+        <section class="about__container container equal-cols section-padding ">
+
+            <div class="about__image">
+                <img src="images/about-image.png" alt="about image">
+            </div>
+            <div class="about__text">
+                <h1 class="about__text__heading"> About</h1>
+                <p class="about__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, earum
+                    Lorem ipsum dolor sit amet consectetur.</p>
+
+                <p>Lorem, ipsum dolor sit <a href="#">Alias error obcaecati</a> tenetur, animi cum
+                    debitis aspernatur excepturi magni repellat tempore. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci?</p>
+                <a class="about__text__button primary-button button-margin" href="#">Discover me</a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features scrollspy">
+        <section class="features__container container equal-cols section-padding">
+            <div class="features__image">
+                <img src="images/feature.img.png" alt="Feature image">
+            </div>
+            <div class="features__text">
+                <h1 class="features__text__heading"> Features</h1>
+                <p class="features__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                    earum
+                    Lorem ipsum dolor sit amet consectetur.</p>
+                <ul>
+                    <li class="feature_text_list_item">
+                        <img class="feature_text_list_icon" src="images/icon-1.png" alt="icon 1">
+                        <div>
+                            <h3>Feature 1</h3>
+                            <p class="feature_tetx_list_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nemo</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="feature_text_list_item">
+                        <img class="feature_text_list_icon" src="images/icon-2.png" alt="icon 1">
+                        <div>
+                            <h3>Feature 2</h3>
+                            <p class="feature_tetx_list_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nemo</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="feature_text_list_item">
+                        <img class="feature_text_list_icon" src="images/icon-3.png" alt="icon 1">
+                        <div>
+                            <h3>Feature 3</h3>
+                            <p class="feature_tetx_list_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Nemo</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="services" class="service scrollspy">
+        <section class="service__container container equal-cols section-padding">
+            <div class="service_card">
+                <div class="service_card_icon">
+                    <img src="images/service-icon-01.png" alt="Service icon-1">
+                </div>
+                <h4 class="services_card_heading"> Service 01</h4>
+                <p class="services_card_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quisquam.</p>
+                <a href="#" class="primary-button">Read More</a>
+            </div>
+            <div class="service_card">
+                <div class="service_card_icon">
+                    <img src="images/service-icon-02.png" alt="Service icon-1">
+                </div>
+                <h4 class="services_card_heading"> Service 02</h4>
+                <p class="services_card_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quisquam.</p>
+                <a href="#" class="primary-button">Read More</a>
+            </div>
+            <div class="service_card">
+                <div class="service_card_icon">
+                    <img src="images/service-icon-03.png" alt="Service icon-1">
+                </div>
+                <h4 class="services_card_heading"> Service 03</h4>
+                <p class="services_card_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quisquam.</p>
+                <a href="#" class="primary-button">Read More</a>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="faq" class="faq scrollspy">
+        <header class="faq_header_container section-padding">
+            <h2 class="faq_header">Frequently Asked Quetions</h2>
+            <p class="faq_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eligendi Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
+        </header>
+        <section class="faq__container container equal-cols section-padding">
+            <div class="faq__text">
+                <h1 class="faq__text__heading"> About Us</h1>
+                <p class="faq__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                    earum
+                    Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="faq__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor <a href="#">sit amet
+                        consectetur adipisicing elit.</a>
+                    Ad, nihil.
+                    earum
+                    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias debitis officia excepturi!</p>
+                <p class="faq_email">Email: <a href="mailto:email@company.com">email@company.com</a></p>
+                <a href="mailto:email@company.com" class="primary-button">Contact Us</a>
+            </div>
+            <div class="faq_details_list">
+                <div class="accordion-container">
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">First common question</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vitae rem
+                                ratione hic dolorum impedit consequatur beatae accusantium vero inventore doloribus,
+                                obcaecati possimus suscipit rerum odio ducimus voluptatem sapiente distinctio excepturi
+                                ipsa est nemo et, accusamus tllitia reprehenderit earum?</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Second common question</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vitae rem
+                                ratione hic dolorum impedit consequatur beatae accusantium vero inventore doloribus,
+                                obcaecati possimus suscipit rerum odio ducimus voluptatem sapiente distinctio excepturi
+                                ipsa est nemo et, accusamus tenetur. Voluptatum aliquam repellendus voluptatem, iure
+                                ullam similique assumenda at. Quidem mollitia reprehenderit earum?</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Third common question</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vitae rem
+                                ratione hic dolorum impedit consequatur beatae accusantium vero inventore doloribus,
+                                obcaecaodio ducimus voluptatem sapiente distinctio excepturi
+                                ipsa est nemo et, accusamus tenetur. Voluptatum aliquam repellendus voluptatem, iure
+                                ullam similique assumenda at. Quidem mollitia reprehenderit earum?</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Fourth common question</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vitae rem
+                                ratione hic dolorum impedit consequatur beatae accusantium vero inventit rerum odio
+                                ducimus voluptatem sapiente distinctio excepturi
+                                ipsa est nemo et, accusamus tenetur. Voluptatum aliquam repellendus voluptatem, iure
+                                ullam similique assumenda at. Quidem mollitia reprehenderit earum?</p>
+                        </div>
+                    </div>
+                    <div class="ac">
+                        <h2 class="ac-header">
+                            <button type="button" class="ac-trigger">Fifth common question</button>
+                        </h2>
+                        <div class="ac-panel">
+                            <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vitae rem
+                                ratione hic dolorum impedit consequatur beataerum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="contact" class="contact equal-cols scrollspy">
+        <section><iframe class="contact_map_iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0474021952!2d-74.31001196101985!3d40.697538013491915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1728678090517!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+        <section class="contact_form">
+            <form class="contact_form_fm">
+                <div class="contact_form_fm_row"><input class="contact_form_fm_row_field" name="fullName"
+                        placeholder="Full Name" type="text">
+                    <input class="contact_form_fm_row_field" name="email" placeholder="Email" type="email">
+                </div>
+                <div class="contact_form_fm_row"><textarea class="contact_form_fm_row_field" name="message"
+                        placeholder="message" rows="6"></textarea></div>
+                <button class="contatc_form_fm_button primary-button">Send it</button>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer container">
+        <p class="container_copyright">Copyright 2024 practical dev</p>
+        <ul class="footer_social_links">
+            <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.5.3/simple-scrollspy.min.js"></script>
+    <script>
+        new Accordion('.accordion-container');
+
+        new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+
+        const options = {
+            sectionClass: '.scrollspy',           // Query selector to your sections
+            // menuActiveTarget: '.menu-item',       // Query selector to your elements that will be added `active` class
+            offset: 200,                          // Menu item will active before scroll to a matched section 100px
+            smoothScroll: true,
+        }
+
+        // or shorter:
+        scrollSpy('#menu-sm', options);
+        scrollSpy('#menu-lg', options);
+
+    </script>
+
+</body>
+
+</html>
